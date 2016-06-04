@@ -14,6 +14,8 @@ rvm install 2.3.0
 rvm use 2.3.0
 
 brew install mysql
+mysql.server start
+
 brew install memcached
 
 brew install lunchy

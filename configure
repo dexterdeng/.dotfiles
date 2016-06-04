@@ -12,3 +12,16 @@ source ~/.bash_profile
 echo "ruby_url=https://cache.ruby-china.org/pub/ruby" > ~/.rvm/user/db
 rvm install 2.3.0
 rvm use 2.3.0
+
+brew install mysql
+brew install memcached
+
+brew install lunchy
+mkdir ~/Library/LaunchAgents
+cp /usr/local/Cellar/memcached/$version/homebrew.mxcl.memcached.plist ~/Library/LaunchAgents/
+#lunchy start memcached
+#lunchy stop memcached
+
+
+brew install redis
+brew install imagemagick

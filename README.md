@@ -1,8 +1,11 @@
 # .dotfiles
 
-install Xcode.app first, and agree the apple license; we need apple accout
+### Sign up an apple account and login app store
 
-### Install
+### Install Xcode.app
+Run `sudo xcodebuild -license` and type `agree`
+
+### Install VIM
 
 ```
 cd
@@ -13,3 +16,4 @@ vim
 :PlugClean
 ```
 
+### run configure file to configure basic environment.

@@ -8,7 +8,7 @@ syntax on
 colorscheme BlackSea
 set guifont=Monaco:h15
 set lines=50 columns=200
-"colorscheme onedark 
+"colorscheme onedark
 "set guifont=M+\ 2m:h13         " 设置字体和大小
 "set lines=40 columns=200       " 设置默认窗口大小
 set clipboard+=unnamed         " use system clipboard
@@ -44,7 +44,7 @@ set hlsearch                   " 高亮搜索结果
 "set splitright                " 所有文件都从右侧纵向分割打开
 set nobackup                   " 设置不生成备份文件
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 "set colorcolumn=120
 "hi ColorColumn ctermbg=238
 " 设置高亮列背景色，并设置快捷键开启和关闭
@@ -98,7 +98,7 @@ let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 " let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 let NERDTreeShowBookmarks=1
-let NERDTreeWinPos = "right"
+let NERDTreeWinPos = "left"
 nmap ,n :NERDTreeFind<CR>
 nmap ,m :NERDTreeToggle<CR>
 " 如果打开的文件只剩nerdtree，则直接退出，避免多次:q
@@ -112,8 +112,8 @@ au FileType slim,javascript let b:delimitMate_nesting_quotes = ['<']
 
 
 " ctrlp
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|tmp|output|_site|public)|(\.(log|swp|ico|git|svn|png|jpg|zip|gif|ttf|svg|woff|eot|DS_Store|keep))$'
-let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|tmp|output|_site|public)|(\.(log|swp|swo|swq|ico|git|svn|png|jpg|zip|gif|ttf|svg|woff|eot|DS_Store|keep))$'
+"let g:ctrlp_show_hidden = 1
 nmap <leader>p :CtrlP<CR>
 nmap <leader>bb :CtrlPBuffer<CR>
 nmap <leader>bm :CtrlPMixed<CR>
@@ -141,3 +141,4 @@ let g:mta_filetypes = {
 " ctags
 au BufWritePost *.rb,*.ru silent! !ctags -R --languages=ruby &
 
+autocmd BufWritePost * :EraseBadWhitespace

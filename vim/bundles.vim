@@ -43,6 +43,7 @@ Plug 'KurtPreston/vim-autoformat-rails'
 " auto handle blank code
 Plug 'bitc/vim-bad-whitespace'
 Plug 'mileszs/ack.vim'
+Plug 'slim-template/vim-slim'
 
 " auto switch input method
 "Plug 'ybian/smartim' Add plugins to &runtimepath

@@ -27,3 +27,5 @@ cp /usr/local/Cellar/memcached/$version/homebrew.mxcl.memcached.plist ~/Library/
 
 brew install redis
 brew install imagemagick
+
+#ssh-keygen -t rsa -b 4096 -C "your_email@example.com"

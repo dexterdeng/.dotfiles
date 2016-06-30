@@ -142,3 +142,7 @@ let g:mta_filetypes = {
 au BufWritePost *.rb,*.ru silent! !ctags -R --languages=ruby &
 
 autocmd BufWritePost * :EraseBadWhitespace
+
+autocmd FileType slim setlocal foldmethod=indent
+autocmd BufNewFile,BufRead *.slim set filetype=slim
+

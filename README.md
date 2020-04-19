@@ -17,3 +17,4 @@ vim
 ```
 
 ### run configure file to configure basic environment.
+brew install ack
